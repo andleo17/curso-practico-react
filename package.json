@@ -1,16 +1,36 @@
 {
-  "name": "practico-react",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  }
+	"name": "practico-react",
+	"version": "1.0.0",
+	"description": "Proyecto para el curso práctico de React en Platzi",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack-cli serve --mode development --no-stats",
+		"dev": "webpack-cli serve --mode development",
+		"build": "webpack --mode production",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"react",
+		"basic"
+	],
+	"author": "andleo17",
+	"repository": {
+		"url": "git@github.com:andleo17/curso-practico-react.git"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.13.10",
+		"@babel/preset-env": "^7.13.10",
+		"@babel/preset-react": "^7.12.13",
+		"babel-loader": "^8.2.2",
+		"html-loader": "^2.1.2",
+		"html-webpack-plugin": "^5.3.1",
+		"webpack": "^5.25.0",
+		"webpack-cli": "^4.5.0",
+		"webpack-dev-server": "^3.11.2"
+	}
 }
