@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as PropTypes from 'prop-types';
 
 import playIcon from '../assets/static/play-icon.png';
 import plusIcon from '../assets/static/plus-icon.png';
@@ -26,5 +27,15 @@ const CarouselItem = ({ video }) => (
     </div>
   </div>
 );
+
+CarouselItem.propTypes = {
+  video: PropTypes.shape({
+    cover: PropTypes.string,
+    title: PropTypes.string,
+    year: PropTypes.number,
+    contentRating: PropTypes.string,
+    duration: PropTypes.number,
+  }),
+};
 
 export default CarouselItem;
